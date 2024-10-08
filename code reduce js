@@ -1,0 +1,10 @@
+let redN = [5, 21, 8, 58, 2, 8, 8, 88];
+
+let resred = redN.reduce(function(accumulator, current) {
+    let min = accumulator < current ? accumulator : current;
+    console.log(`Accumulator: ${accumulator} + Current: ${current} = Min so far: ${min}`);
+    return min;
+}, 22);
+
+console.log("");
+console.log(`المجموع الكلي = ${resred}`);
